@@ -339,6 +339,23 @@ nav {
   }
 }
 
+#portfolio_grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 50px;
+    margin-top: 50px;
+    height:100%;
+}
+
+#portfolio_grid div {
+        margin: auto;
+        height: 300px;
+        width: 300px;
+        border-style: solid;
+        border-width: 5px;
+        border-color: #c1272d;
+}
+
 
 
 .nonfront_selector {
