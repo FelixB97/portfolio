@@ -7,7 +7,22 @@
     <title>Vite App</title>
   </head>
   <body>
-    <header></header>
+    <header>
+      <nav>
+        <div id="burger_menu">
+        <div class="site_links hidden">
+          <div><a>Front Page</a></div>
+          <div><a href="./html/works.html">Portfolio</a></div>
+          <div><a href="./html/contact.html">Contact</a></div>
+        </div>
+        <div class="btn not-active">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        </div>
+      </nav>
+    </header>
     <main>
       <section id="splash">
         <img src="public/images/splash.png">
@@ -16,19 +31,51 @@
         <div class="header">
           <h2>About me</h2>
         </div>
+        <div>
+          <img src="./public/images/172169196_1074083249753738_1628776902875569195_n.jpg">
+          <div class="tekst_container">
+            <p>My name is Felix Bryld, I'm a multimedia design student at KEA. I love solving problems with creative solutions and improving my ability to understand and overcome challenges. By Nature I'm a very competitive person.  My favourite hobbies would be Volleyball and computer games. Ever since I started coding and learning programming, I knew that these were the tools I wanted to work with. 
+              I'm an energetic person who loves creating new and exciting ideas or building and improving existing ones, and I should have no problem fitting in socially with any team of colleges.</p>
+          </div>
+        </div>
       </section>
       <section id="skills">
         <div class="header">
           <h2>Skills</h2>
+        </div>
+        <div class="main_container">
+          <p> My personal skills include:<br><br>
+            HTML, CSS, JavaScript, Wordpress Rest API, GitHub, Adobe XD, Photoshop, Illustrator and Premier Pro.</p>
+          <div class="image_container">
+            <img src="./public/images/html.PNG">
+            <img src="./public/images/css.PNG">
+            <img src="./public/images/js.PNG">
+          </div>
+          <p>I'm currently learning:<br><br>
+            REACT, C++ and Figma</p>
+            <div class="button_container">
+              <p>view my works</p>
+              <button href="./html/works.html">Works</button>
+            </div>
         </div>
       </section>
       <section id="contact">
         <div class="header">
           <h2>Contact me</h2>
         </div>
+        <div>¨
+          <p>
+            If you are interested in me as a potential employee coworker, or other inquiry you can contact me via: <br> <br>
+            @Email: <a style="color: #3D7AC9;" target="blanc" >fillefish@hotmail.com</a><br><br>
+            Phone: <a style="color: #3D7AC9;" target="blanc" >+45 53 35 88 63</a><br><br>
+            
+            LinkedIn: <a style="color: #3D7AC9;" target="blanc" href="https://www.linkedin.com/in/felixbryld">www.linkedin.com/in/felixbryld</a>
+            
+            </p>
+        </div>
       </section>
     </main>
-    <div id="app"></div>
+    <footer><p>this is a footer</p></footer>
     <script type="module" src="/main.js"></script>
   </body>
 </html>
