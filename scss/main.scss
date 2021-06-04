@@ -139,6 +139,7 @@ footer {
     padding-bottom: 60px;
     transition-duration: 1s;
     top:0;
+    z-index: 1;
     div {
         display: flex;
     }
@@ -216,6 +217,7 @@ nav {
     transform: translate(-50%, -50%);
     width: 50px;
     cursor: pointer;
+    z-index: 2;
   }
   
   span {
@@ -347,13 +349,29 @@ nav {
     height:100%;
 }
 
-#portfolio_grid div {
+#portfolio_grid div div {
         margin: auto;
         height: 300px;
         width: 300px;
         border-style: solid;
         border-width: 5px;
         border-color: #c1272d;
+        img:hover {
+          transition-duration: 1s;
+          transform: scale(1.5);
+        }
+}
+
+@media (min-width: 750px) {
+  #portfolio_grid {
+    grid-template-columns: 1fr 1fr;
+}
+}
+
+@media (min-width: 1200px) {
+  #portfolio_grid {
+    grid-template-columns: 1fr 1fr 1fr;
+}
 }
 
 
