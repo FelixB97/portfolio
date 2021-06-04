@@ -8,7 +8,7 @@ function init() {
   buttonEvent();
   if (document.querySelector("#skills button")!==null) {
     document.querySelector("#skills button").addEventListener("click", function(){
-      window.location.href = "html/works.html";
+      window.location.href = "./works.html";
     })
   }
   
