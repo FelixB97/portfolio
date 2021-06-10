@@ -1,0 +1,40 @@
+/* imports colors */
+
+@import "../base/color_variables" ;
+
+.works_header_selector {
+    margin-top: 10vh;
+}
+
+#portfolio_grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 50px;
+    margin-top: 50px;
+    height:100%;
+}
+
+#portfolio_grid div div {
+        margin: auto;
+        height: 300px;
+        width: 300px;
+        border-style: solid;
+        border-width: 5px;
+        border-color: #c1272d;
+        img:hover {
+          transition-duration: 1s;
+          transform: scale(1.5);
+        }
+}
+
+@media (min-width: 750px) {
+    #portfolio_grid {
+      grid-template-columns: 1fr 1fr;
+  }
+  }
+  
+  @media (min-width: 1200px) {
+    #portfolio_grid {
+      grid-template-columns: 1fr 1fr 1fr;
+  }
+  }

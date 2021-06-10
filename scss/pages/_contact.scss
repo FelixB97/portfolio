@@ -1,0 +1,14 @@
+/* imports colors */
+
+@import "../base/color_variables" ;
+
+.contact_header_selector {
+    margin-top: 10vh;
+}
+
+#contact {
+    height: 60vh;
+    div:last-child {
+        padding: 50px;
+    }
+}
