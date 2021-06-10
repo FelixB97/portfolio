@@ -1,0 +1,15 @@
+/* imports colors */
+
+@import "../base/color_variables" ;
+
+p {
+    color: $fontColor;
+}
+
+h2 {
+    color: $fontColor;
+    width: 100%;
+    text-align: center;
+    font-size: 35px;
+    
+}
