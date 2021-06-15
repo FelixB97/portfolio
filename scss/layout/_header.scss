@@ -53,14 +53,14 @@
 }
 .activeIn {
     animation: slideIn;
-    animation-duration: 0.7s;
+    animation-duration: 0.5s;
     transition-timing-function: ease-out;
 
 }
 
 .activeOut {
     animation: slideOut;
-    animation-duration: 0.7s;
+    animation-duration: 0.5s;
     transition-timing-function: ease-in;
 }
 
