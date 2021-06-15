@@ -30,7 +30,7 @@ export function burgerMenu() {
           if (btn.classList[1]!=="active") {
           document.querySelector(".site_links").classList.add("hidden");
           }
-        },700)
+        },500)
         
   
         document.querySelector(".site_links").classList.remove("activeIn");

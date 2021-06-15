@@ -3,10 +3,14 @@
 @import "../base/color_variables" ;
 
 #splash{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     img{
         max-width: 80vw;
         margin-left: 10vw;
         margin-top: 20%;
+        max-height: 80vh;
     }
 }
 
@@ -14,7 +18,7 @@
     display: flex;
     flex-direction: column;
     img {
-        width: 85vw;
+        width: 100%;
         max-width: 600px;
         align-self: center;
     }
@@ -22,7 +26,7 @@
         border-style: solid;
         border-width: 5px;
         border-color: #c1272d;
-        width: 85vw;
+        width: 100%;
         max-width: 600px;
         align-self: center;
         border-top: none;
@@ -77,22 +81,121 @@
             text-align: center;
             font-size: 40px;
             cursor: pointer;
-            color:#212323;
+            color: $darkGrey;
         }
+    }
+}
+
+#contact #about_information{
+    height: 60vh;
+}
+
+#contact {
+    .contact_container p {
+        padding: 0;
     }
 }
 
 @media (min-width: 400px) {
     #splash{
-        display: flex;
-        justify-content: center;
         img{
-            width: 300px;
-            height: 600px;
             margin-top: 100px;
             margin-left: 0;
             
         }
         
+    }
+}
+
+
+/* style for desktop and tablet layout */
+
+@media (min-width: 1000px) {
+    #about {
+        display: flex;
+        flex-direction: row;
+        max-height: 70vh;
+    
+        .header {
+            width: 45vw;
+            padding:0;
+        }
+    
+        div {
+            width: 40vw;
+            padding-left: 7.5vw;
+            position: relative;
+            div {
+                position: absolute;
+                left: -110%;
+                top: 7%;
+            }
+            .tekst_container {
+                border-width: 0px;
+            }
+        }
+        
+    }
+    
+    #skills {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        .header {
+            width: 45vw;
+            align-self: flex-end;
+        }
+        .main_container {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            max-width: 45vw;
+            p {
+                width: 80%;
+            }
+            div {
+                width: 50%;
+                padding: 5%;
+                align-self: center;
+            }
+            .button_container {
+                position: absolute;
+                left: -90%
+            }
+        }
+        #works_exampple {
+            height: 200px;
+            width: 200px;
+            border-style: solid;
+            border-width: 5px;
+            border-color: $red;
+        }
+    }
+    
+    #contact {
+        .header {
+            width: 45vw;
+        }
+        #about_information{
+            width: 40%;
+            height: 100%;
+            p {
+                padding: 50px;
+            }
+        }
+        #send_email{
+            background-color: lawngreen;
+            height: 100%;
+            width: 40vw;
+            margin: auto;
+            margin-left: 12%;
+            margin-top: -8vh;
+        }
+        .contact_container{
+            display: flex;
+            justify-content: space-between;
+            height:40vh;
+        }
     }
 }
