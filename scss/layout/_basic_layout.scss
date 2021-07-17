@@ -5,6 +5,17 @@
 
 
 section {
-    height: 95vh;
-    margin-bottom: 5vh;
+    max-height: 90vh;
+    // margin-bottom: 5vh;
+    padding-top: 10vh;
+}
+
+@media (min-width: 1000px)  {
+    section {
+        max-height: 80vh;
+        padding-top: 20vh;
+    }
+    #burger_menu {
+        display:none;
+    }
 }
