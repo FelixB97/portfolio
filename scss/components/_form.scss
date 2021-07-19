@@ -1,0 +1,115 @@
+@import "../base/color_variables" ;
+
+
+#send_email {
+    max-width: 500px;
+    border-style: solid;
+    border-width: 5px;
+    border-color: $red;
+    padding: 30px 40px 110px 40px;
+    display: flex;
+    flex-direction: column;
+    h2 {
+        margin-bottom: 20px;
+        color: $red;
+    }
+}
+
+#submit_email {
+all: initial;
+background-color: $brightGreen;
+// height: 50px;
+width: 250px;
+border-radius: 10px;
+text-align: center;
+font-size: 30px;
+cursor: pointer;
+color: $darkGrey;
+align-self: center;
+margin-top: 10px;
+padding: 10px;
+}
+
+.form-field {
+    background-color: white;
+    border-color: $darkGrey;
+    // border-radius: 2px;
+    padding: 0.75rem;
+    color: $darkGrey;
+    font-size: 1rem;
+    font-family: 'Times New Roman', Times, serif;
+    transition: border 0.25s ease-in-out;
+    flex-grow: 1;
+
+    &:hover {
+        border-color: $darkGrey;
+    }
+
+    &:focus {
+        border-color: white;
+        outline: 0.25rem transparent;
+        // box-shadow: 0 0 0 0.25rem $input-outline-color;
+    }
+    &:valid {
+        border-color: $brightGreen;
+    }
+    
+    // &:focus:required:invalid {
+    //     border-color: $red;
+    // }
+    
+    &:not(:focus):not(:placeholder-shown):invalid {
+      border-color: $red;
+    }
+    
+    &input:not(:focus):not(:placeholder-shown):invalid {
+      display: block; 
+    }
+    
+    &:not(:focus):not(:placeholder-shown):valid {
+      border-color: $brightGreen;
+    }
+      
+}
+
+.form-label {
+    color: white;
+    margin-bottom: 0.4rem;
+    display: block;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    margin-bottom: 20px;
+
+    > .form-field {
+        padding-right: 2.5rem;
+
+        &:focus ~ .form-icon > svg {
+            stroke: $red;
+        }
+    }
+
+    > .form-icon {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0.75rem;
+        top: 0;
+        bottom: 0;
+        right: 0;
+
+        > svg {
+            stroke: $red;
+        }
+    }
+}
+
+
+
+.last_in_group {
+    // margin-top: 50px;
+}
