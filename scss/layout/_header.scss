@@ -2,6 +2,26 @@
 
 @import "../base/color_variables" ;
 
+#desktop_nav {
+  display: none;
+  position: fixed;
+  top: 35px;
+  left: 2vw;
+  font-size: 25px;
+  div {
+    margin-right: 20px;
+    a {
+      color: $red;
+    }
+  }
+}
+
+@media (min-width: 1000px) {
+  #desktop_nav {
+    display: flex;
+  }
+}
+
 .header {
     background-color: #c1272d;
     height: 8vh;

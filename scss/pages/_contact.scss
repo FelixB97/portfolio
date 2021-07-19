@@ -16,3 +16,20 @@
         // test this
     }
 }
+
+.contact_html {
+    height: 82vh;
+    max-height: 82vh;
+    padding: 0;
+    scroll-snap-align: start;
+    p {
+        padding: 50px;
+        position: fixed;
+
+    }
+
+}
+
+#main_contact {
+    height: 82vh;
+}

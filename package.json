@@ -3,14 +3,17 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "serve": "vite preview"
+    "serve": "vite preview",
+    "server": "live-server"
   },
   "devDependencies": {
     "sass": "^1.34.1",
     "vite": "^2.3.5"
   },
   "dependencies": {
+    "emailjs-com": "^3.2.0",
     "gsap": "^3.7.0",
+    "npm": "^7.20.0",
     "vite": "^2.3.5"
   }
 }
