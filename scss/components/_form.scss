@@ -3,15 +3,20 @@
 
 #send_email {
     max-width: 500px;
-    border-style: solid;
+    border-style: none;
     border-width: 5px;
     border-color: $red;
-    padding: 30px 40px 110px 40px;
+    padding: 30px 40px 30px 40px;
     display: flex;
     flex-direction: column;
     h2 {
         margin-bottom: 20px;
         color: $red;
+    }
+}
+@media (min-width: 1000px) {
+    #send_email {
+        border-style: solid;
     }
 }
 
@@ -62,11 +67,13 @@ padding: 10px;
     
     &:not(:focus):not(:placeholder-shown):invalid {
       border-color: $red;
+      animation: error;
+      animation-duration: .4s;
     }
     
-    &input:not(:focus):not(:placeholder-shown):invalid {
-      display: block; 
-    }
+    // &input:not(:focus):not(:placeholder-shown):invalid {
+    //   display: block; 
+    // }
     
     &:not(:focus):not(:placeholder-shown):valid {
       border-color: $brightGreen;
@@ -155,10 +162,10 @@ padding: 10px;
 }
 @keyframes error {
     10% {
-        transform: translateX(-20px);
+        transform: translateX(-10px);
     }
     40% {
-        transform: translateX(20px);
+        transform: translateX(10px);
     }
     80% {
         transform: translateX(0px);
