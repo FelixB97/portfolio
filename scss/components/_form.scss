@@ -32,7 +32,9 @@ padding: 10px;
 
 .form-field {
     background-color: white;
+    transition-duration: 1s;
     border-color: $darkGrey;
+    border-width: 3.5px;
     // border-radius: 2px;
     padding: 0.75rem;
     color: $darkGrey;
@@ -76,6 +78,7 @@ padding: 10px;
     color: white;
     margin-bottom: 0.4rem;
     display: block;
+    margin-left: 5px;
 }
 
 .input-group {
@@ -113,3 +116,82 @@ padding: 10px;
 .last_in_group {
     // margin-top: 50px;
 }
+
+.button_success {
+    background-color: grey!important;
+    display: flex!important;
+    justify-content: center!important;
+    padding: 11px 10px 11px 10px!important;
+        svg{
+        animation: success!important;
+        animation-iteration-count: infinite!important;
+        animation-timing-function: ease-in-out!important;
+        animation-duration: 1.5s!important;
+    
+    
+        }
+}
+
+.post_success {
+    display: flex!important;
+    justify-content: center!important;
+    padding: 11px 10px 11px 10px!important;
+}
+
+.button_error {
+    background-color: $red!important;
+    animation: error!important;
+    animation-duration: 0.4s!important;
+}
+
+@keyframes success {
+    20%{
+        //do nothing
+    }
+    100% {
+        transform: rotate(2turn);
+    }
+    
+}
+@keyframes error {
+    10% {
+        transform: translateX(-20px);
+    }
+    40% {
+        transform: translateX(20px);
+    }
+    80% {
+        transform: translateX(0px);
+    }
+}
+
+.fading_out_animation {
+    animation: greenFadeOut!important;
+    animation-duration: 1.5s!important;
+    animation-timing-function: ease-in-out!important;
+}
+
+.fading_in_animation {
+    animation: greenFadeIn!important;
+    animation-duration: 1s!important;
+    animation-timing-function: ease-in-out!important;
+}
+
+@keyframes greenFadeOut {
+    0%{
+       stroke: $darkGrey;
+    }
+    100%{
+       stroke: $brightGreen;
+    }
+}
+
+@keyframes greenFadeIn {
+    0%{
+        color: $brightGreen;
+    }
+    100% {
+        color: $darkGrey;
+    }
+}
+
