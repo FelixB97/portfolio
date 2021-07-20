@@ -71,6 +71,6 @@ function works_gsap() {
 function contact_gsap() {
     //contact animations
     gsap.to(".contact_html", {opacity: 0.4, scrollTrigger: {
-        toggleActions: "play pause resume reset", scroller: "main", start: "top 100%",end: "top 60%", trigger: "footer", scrub:true,
+        toggleActions: "play pause resume reset", scroller: "main", start: "top 80%",end: "top 65%", trigger: "footer", scrub:true,
     }});
 }
