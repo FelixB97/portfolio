@@ -1,0 +1,76 @@
+
+@import "../base/color_variables" ;
+
+.singleview {
+    position: relative;
+}
+
+.singleview_main {
+    scroll-snap-type: y mandatory!important;
+}
+
+.singleview_footer {
+    scroll-snap-align: end;
+}
+
+.singleview svg {
+    transform: translateX(25px);
+    cursor: pointer;
+    position: absolute;
+    left: 0;
+}
+
+.singleview_image {
+    // background-color: green;
+    height: 30vh;
+    width: 100vw;
+    background-size: cover;
+}
+
+.singleview_links {
+    height: 15vh;
+    padding-top: 5vh;
+    p {
+        font-size: 3.5vw;
+        text-align: center;
+    }
+}
+
+.singleview_text {
+    height: 37vh;
+    padding: 0 10vw 0 10vw;
+    p {
+        font-size: 3.5vw;
+    }
+}
+
+.singleview article {
+    scroll-snap-align: start;
+}
+
+@media (min-width: 1000px) {
+
+    .singleview_text {
+        p {
+            font-size: 1.5vw;
+        }
+    }
+    .singleview_links {
+        p {
+            padding: 0 30vw 0 30vw;
+            font-size: 1.5vw;
+        }
+    }
+    .singleview_image {
+        // background-color: green;
+        margin: auto;
+        height: 20vw;
+        width: 30vw;
+        background-size: cover;
+    }
+
+    .buffer {
+        height: 5vh;
+    }
+
+}

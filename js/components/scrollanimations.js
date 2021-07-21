@@ -24,6 +24,10 @@ export function gsapAnimations() {
         contact_gsap();
     }
 
+    else if ( document.querySelector(".singleview_image")!==null ) {
+        singleView_gsap();
+    }
+
 }
 
 function frontpage_gsap() {
@@ -71,6 +75,12 @@ function works_gsap() {
 function contact_gsap() {
     //contact animations
     gsap.to(".contact_html", {opacity: 0.4, scrollTrigger: {
+        toggleActions: "play pause resume reset", scroller: "main", start: "top 80%",end: "top 65%", trigger: "footer", scrub:true,
+    }});
+}
+
+function singleView_gsap() {
+    gsap.to(".singleview article", {opacity: 0.4, scrollTrigger: {
         toggleActions: "play pause resume reset", scroller: "main", start: "top 80%",end: "top 65%", trigger: "footer", scrub:true,
     }});
 }

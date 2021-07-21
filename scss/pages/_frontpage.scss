@@ -70,6 +70,7 @@ main {
         padding: 5vw;
     img {
         width: 60px;
+        height: 77px;
     }
     }
     p {
@@ -163,6 +164,7 @@ main {
         display: flex;
         flex-direction: column;
         align-items: flex-end;
+        height: 80vh;
         .header {
             width: 45vw;
             align-self: flex-end;
@@ -179,7 +181,8 @@ main {
             div {
                 width: 50%;
                 padding: 5%;
-                align-self: center;
+                align-self: start;
+                margin-left: 50px;
             }
             .button_container {
                 position: absolute;
@@ -192,6 +195,7 @@ main {
             border-style: solid;
             border-width: 5px;
             border-color: $red;
+            margin:auto;
         }
     }
     
