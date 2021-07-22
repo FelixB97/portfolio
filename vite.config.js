@@ -9,12 +9,12 @@ module.exports = {
         main: resolve(__dirname, 'index.html'),
         subpage: resolve(__dirname, 'works.html'),
         subpage2: resolve(__dirname, 'contact.html'),
-        subpage3: resolve(__dirname, 'html/pages/singleview1.html'),
-        subpage4: resolve(__dirname, 'html/pages/singleview2.html'),
-        subpage5: resolve(__dirname, 'html/pages/singleview3.html'),
-        subpage6: resolve(__dirname, 'html/pages/singleview4.html'),
-        subpage7: resolve(__dirname, 'html/pages/singleview5.html'),
-        subpage8: resolve(__dirname, 'html/pages/singleview6.html')
+        singleview1: resolve(__dirname, 'singleview1.html'),
+        singleview2: resolve(__dirname, 'singleview2.html'),
+        singleview3: resolve(__dirname, 'singleview3.html'),
+        singleview4: resolve(__dirname, 'singleview4.html'),
+        singleview5: resolve(__dirname, 'singleview5.html'),
+        singleview6: resolve(__dirname, 'singleview6.html')
       }
     }
   }
