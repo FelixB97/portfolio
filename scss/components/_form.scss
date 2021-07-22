@@ -149,6 +149,8 @@ padding: 10px;
     background-color: $red!important;
     animation: error!important;
     animation-duration: 0.4s!important;
+    border:none!important;
+    color: $darkGrey!important;
 }
 
 @keyframes success {

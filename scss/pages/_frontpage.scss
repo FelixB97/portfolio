@@ -99,13 +99,30 @@ main {
             align-self: center;
             margin-top: 10px;
             padding: 10px;
+            
         }
+        button:hover {
+            transition: .4s;
+        background-color: $darkGrey;
+        color: $brightGreen;
+        border: solid 1px $brightGreen;
+        }
+          
     }
 }
 
 #contact {
     height: 90vh;
     padding-bottom: 0;
+    #send_email {
+        margin: auto;
+    }
+    button:hover {
+        transition: .4s;
+    background-color: $darkGrey;
+    color: $brightGreen;
+    border: solid 1px $brightGreen;
+    }
 }
 
 #contact #about_information{
@@ -150,8 +167,12 @@ main {
             position: relative;
             div {
                 position: absolute;
-                left: -96%;
-                top: 11%;
+                // left: -96%;
+                // top: 11%;
+                top: 6vh;
+                left: -47.5vw;
+                width: 40vw !important;
+                padding-left: 5vw;
             }
             .tekst_container {
                 border-width: 0px;
@@ -196,6 +217,8 @@ main {
             border-width: 5px;
             border-color: $red;
             margin:auto;
+            background-image: url("./images/example.png");
+            background-size: contain;
         }
     }
     
@@ -217,6 +240,7 @@ main {
             margin: auto;
             margin-left: 12%;
             margin-top: -8vh;
+
         }
         .contact_container{
             display: flex;
