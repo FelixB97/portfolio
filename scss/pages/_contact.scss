@@ -29,6 +29,18 @@
         padding: 3vh 50px 7vh 50px;
     
     }
+    #submit_email {
+        border: solid 1px $brightGreen;
+
+    }
+    #submit_email:hover {
+        
+        transition: .4s;
+        background-color: $darkGrey;
+        color: $brightGreen;
+        
+        
+    }
 }
 
 #main_contact {
