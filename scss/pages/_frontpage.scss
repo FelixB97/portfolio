@@ -40,7 +40,7 @@ main {
         border-width: 5px;
         border-color: $red;
         width: 100%;
-        max-width: 600px;
+        // max-width: 600px;
         align-self: center;
         border-top: none;
         p{
@@ -99,13 +99,14 @@ main {
             align-self: center;
             margin-top: 10px;
             padding: 10px;
+            border: solid 1px $brightGreen;
             
         }
         button:hover {
             transition: .4s;
-        background-color: $darkGrey;
-        color: $brightGreen;
-        border: solid 1px $brightGreen;
+            background-color: $darkGrey;
+            color: $brightGreen;
+        
         }
           
     }
@@ -117,11 +118,14 @@ main {
     #send_email {
         margin: auto;
     }
+    button {
+        border: solid 1px $brightGreen;
+    }
     button:hover {
         transition: .4s;
-    background-color: $darkGrey;
-    color: $brightGreen;
-    border: solid 1px $brightGreen;
+        background-color: $darkGrey;
+        color: $brightGreen;
+    
     }
 }
 
