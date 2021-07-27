@@ -13,3 +13,24 @@ h2 {
     font-size: 35px;
     
 }
+
+// font family
+
+@font-face {
+    font-family: timesnewroman;
+    src: url(../../scss/fonts/fonts/times_new_roman-webfont.woff2);
+}
+
+p {
+    font-family: timesnewroman;
+}
+
+h1 {}
+
+h2, h3, h4, h5, h6, a {
+    font-family: timesnewroman;
+}
+
+.form-field {
+    font-family: timesnewroman;
+}

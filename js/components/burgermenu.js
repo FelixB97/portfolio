@@ -1,5 +1,5 @@
 export function burgerMenu() {
-    console.log("buttons ready!");
+    // console.log("buttons ready!");
     const btn = document.querySelector(".btn");
   
     btn.addEventListener('click', function() {
