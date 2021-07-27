@@ -116,6 +116,7 @@ figure.snip0015 h2 {
   opacity: 0;
   -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
   transition: opacity 0.35s,-webkit-transform 0.35s,-moz-transform 0.35s,-o-transform 0.35s,transform 0.35s;
+  pointer-events: none;
 }
 figure.snip0015 h2 {
   word-spacing: -0.15em;

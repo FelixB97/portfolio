@@ -6,21 +6,21 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 export function gsapAnimations() {
-    console.log("gsap animations!");
+    // console.log("gsap animations!");
     
     if (window.location.pathname == "/index.html" || window.location.pathname == "/kea/portfolio/index.html") {
         //run frontpage gsap
-        console.log("you're on the frontpage");
+        // console.log("you're on the frontpage");
         frontpage_gsap();
     }
     
     else if (window.location.pathname == "/works.html" || window.location.pathname == "/kea/portfolio/works.html") {
-        console.log("you're on the portfolio page");
+        // console.log("you're on the portfolio page");
         works_gsap();
     }
 
     else if (window.location.pathname == "/contact.html" || window.location.pathname == "/kea/portfolio/contact.html") {
-        console.log("you're on the contact page");
+        // console.log("you're on the contact page");
         contact_gsap();
     }
 

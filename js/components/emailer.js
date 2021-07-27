@@ -4,7 +4,7 @@ import emailjs from 'emailjs-com';
 
 export function loadMailApp() {
     init("user_0u0tmnrcbXhVuxm60rDOs");
-    console.log("mail app active!");
+    // console.log("mail app active!");
     clearValues();
     document.querySelector("#submit_email").addEventListener("click", sendTheMail);
     getFormImput();

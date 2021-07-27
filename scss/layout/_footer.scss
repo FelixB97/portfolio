@@ -67,3 +67,12 @@ footer div a:hover {
         font-size: 15px;
     }
 }
+
+@media (min-width: 1000px) {
+    .footer_left {
+        margin-left: -15vw;
+    }
+    .footer_right {
+        margin-left: 10vw;
+    }
+}
