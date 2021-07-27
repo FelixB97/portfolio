@@ -18,6 +18,10 @@
     cursor: pointer;
     position: absolute;
     left: 0;
+    transition: 0.5s;
+}
+.singleview svg:hover {
+    transform: translateX(22px) scale(1.1);
 }
 
 .singleview_image {
