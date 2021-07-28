@@ -3,6 +3,9 @@
 
 .singleview {
     position: relative;
+    a {
+        color: $linkColor;
+    }
 }
 
 .singleview_main {
@@ -107,6 +110,16 @@
     .singleview_links {
         p {
             font-size: 25px;
+        }
+    }
+
+}
+
+@media (min-width: 1800px) {
+    .singleview_text {
+        padding: 0 30vw 0 30vw;
+        p {
+            font-size: 20px;
         }
     }
 

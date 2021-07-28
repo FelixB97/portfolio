@@ -118,7 +118,9 @@ padding: 10px;
     }
 }
 
-
+button {
+    height: 36px!important;
+}
 
 .last_in_group {
     // margin-top: 50px;
@@ -128,7 +130,7 @@ padding: 10px;
     background-color: grey!important;
     display: flex!important;
     justify-content: center!important;
-    padding: 11px 10px 11px 10px!important;
+    padding: 10px 10px 10px 10px!important;
         svg{
         animation: success!important;
         animation-iteration-count: infinite!important;
@@ -142,7 +144,7 @@ padding: 10px;
 .post_success {
     display: flex!important;
     justify-content: center!important;
-    padding: 11px 10px 11px 10px!important;
+    padding: 10px 10px 10px 10px!important;
 }
 
 .button_error {
