@@ -6,6 +6,7 @@ main {
     scroll-snap-type: y mandatory;
     height: 100vh;
     overflow-y: scroll;
+    scroll-behavior: smooth;
     #splash, #about, #skills, #contact {
         scroll-snap-align: start;
     }
@@ -115,6 +116,9 @@ main {
 #contact {
     height: 90vh;
     padding-bottom: 0;
+    p {
+        padding-bottom: 0!important;
+    }
     #send_email {
         margin: auto;
     }
@@ -221,7 +225,7 @@ main {
             border-width: 5px;
             border-color: $red;
             margin:auto;
-            background-image: url("./images/example.png");
+            background-image: url("../images/example.png");
             background-size: contain;
         }
     }
